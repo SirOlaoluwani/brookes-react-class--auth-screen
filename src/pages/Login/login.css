@@ -1,0 +1,134 @@
+#login {
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+#login .container {
+  display: grid;
+  grid-template-columns: 1.6fr 2fr;
+  height: 100vh;
+}
+
+#login .container .side-image {
+  overflow: hidden;
+}
+
+#login .container .side-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+#login .container .form-container {
+  padding-top: 70px;
+  padding-left: 76px;
+  padding-right: 77px;
+  padding-bottom: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#login .container .form-tab-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid rgba(187, 189, 194, 1);
+  align-items: center;
+  justify-content: space-between;
+}
+
+#login .container .form-tab-container .form-tab {
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.50);
+  text-align: center;
+  font-family: Josefin Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+#login .container .form-tab-container .form-tab.active {
+  font-weight: 700;
+  color: #000;
+  position: relative;
+}
+
+#login .container .form-tab-container .form-tab.active::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #000;
+}
+
+#login .container .form-container .description {
+  color: #292D32;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+#login .form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#login .form .form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#login .form .form-content .form-input {
+  background: white;
+  border: 1px solid #BBBDC2;
+  padding: 12px 16px;
+}
+
+#login .form .form-content .password-field {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #BBBDC2;
+  padding-inline: 16px;
+}
+
+#login .form .form-content .password-field .password-field-input {
+  padding: 12px 0;
+  display: flex;
+  flex-grow: 1;
+  border: none;
+}
+
+#login .form .form-content .password-field .show-btn {
+  all: unset;
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 114.286% */
+  cursor: pointer;
+}
+
+#login .form .sign-in-button {
+  all: unset;
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 12px 48px;
+  width: fit-content;
+  align-self:flex-end;
+}
