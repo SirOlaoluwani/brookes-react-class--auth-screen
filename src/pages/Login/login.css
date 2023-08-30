@@ -1,5 +1,5 @@
 #login {
-  height: 100vh;
+  /* height: 100vh; */
   /* overflow: hidden; */
 }
 
@@ -130,5 +130,22 @@
   text-align: center;
   padding: 12px 48px;
   width: fit-content;
-  align-self:flex-end;
+  cursor: pointer;
+}
+
+#login .form .forgot-password-button {
+  all: unset;
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+#login .form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
